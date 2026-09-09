@@ -1,0 +1,127 @@
+body { 
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(194, 236, 236);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Bilkul screen ke center mein lane ke liye */
+    box-sizing: border-box;
+} 
+
+.signupform { 
+    background-color: rgb(253, 254, 255);
+    padding: 50px;           /* Khula gap takay circle neat lagay */
+    width: 710px;            /* Width ko barhaya */
+    height: 710px;           /* Height ko exact width ke barabar kiya (Perfect Square) */
+    border-radius: 50%;      /* Yeh property isay bilkul GOL CIRCLE banaye gi */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    box-shadow: 0 10px 25px rgba(255, 255, 255, 0.705),
+                0 -5px 20px rgba(255, 255, 255, 0.705),
+                0 0 30px rgba(255, 255, 255, 0.705);
+}
+
+.signupform h2 { 
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 25px;
+    font-size: 26px;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Two Column Grid Setup */
+.form-grid {
+    display: flex;
+    flex-direction: row;     /* Left aur Right do columns banayega */
+    gap: 25px;               /* Dono columns ke darmiyan gap */
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.form-col {
+    flex: 1;                 /* Dono columns barabar space lein ge */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Label aur Input Row */
+.input-row { 
+    display: flex;
+    flex-direction: row;     /* Label left, input right */
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 18px;
+    width: 100%;
+} 
+
+.input-row label {
+    width: 100px;            /* Grid ke hisab se width adjust ki */
+    text-align: left;
+    font-weight: normal;
+    font-size: 15px;
+}
+
+.input-row input { 
+    flex: 1;
+     max-width: 250px;
+    padding: 8px 10px;       /* Circle ke andar fit karne ke liye perfect padding */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-family: inherit;
+    font-size: 14px;
+} 
+
+/* Gender Radio Styling inside Grid */
+.radio-group {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+.radio-group input {
+    margin-left: 8px;
+    margin-right: 3px;
+}
+
+/* Bottom elements alignment */
+.terms-section {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.terms-section input {
+    margin-right: 8px;
+}
+
+.signup-btn {
+    width: 100px;
+        padding: 10px;
+        background-color: rgb(4, 4, 90);
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+}
+.signup-btn:hover {
+    background-color: brown;
+        color: rgb(255, 255, 255);
+}
+
+.login-redirect {
+    font-size: 14px;
+    margin: 0;
+}
