@@ -18,9 +18,10 @@ body {
 .signupform { 
     background-color: rgb(253, 254, 255);
     padding: 15px 40px; 
-    margin: 15px 25px;         
+    margin: 25px 35px;         
     width: 610px;            
-    height: 710px;           
+    height: 710px;      
+    border-radius: 75px;     
     display: flex;
     flex-direction: column;
     justify-content: center;
