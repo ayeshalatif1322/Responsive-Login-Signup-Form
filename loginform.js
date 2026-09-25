@@ -8,7 +8,7 @@ function login() {
     let passwordValue = userPass.value;
 
     statusMessage.style.fontSize = "12px";
-    statusMessage.style.marginTop = "5px 0";
+    statusMessage.style.marginTop = "0px 0";
 
     if (emailValue === "" || passwordValue === "") {
         statusMessage.innerText = "Please fill in all fields.";
