@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+           
         <meta charset="UTF-8">
          <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Responsive Login Form</title>
@@ -12,16 +13,18 @@
     
         <div class="input-row">
     <label>Username:</label>
-    <input type="text" placeholder="Username">
+    <input type="email" id="userEmail" placeholder="Username">
 </div>
 
 <div class="input-row">
     <label>Password:</label>
-    <input type="password" placeholder="Password">
+    <input type="password" id="userPassword" placeholder="Password">
 </div>
-        <button>Login</button>
-    
+        <button id="loginBtn">Login</button>
+    <h4 id="statusMessage" style="margin-top: 5px; font-weight:"></h4>
     <P>Not Registered? <a href="signup.html">Create a new account. </a></P>
     </div>
+
+    <script src="loginform.js"></script>
 </body>
 </html>
